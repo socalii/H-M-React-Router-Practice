@@ -49,3 +49,22 @@ input:focus {
   margin-left: auto;
   margin-right: 20px;
 }
+
+.choice {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.new {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.product-card {
+  transition: transform 0.2s ease;
+}
+
+.product-card :hover {
+  transform: scale(1.05);
+}
