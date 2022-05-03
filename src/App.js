@@ -3,8 +3,10 @@ import { Routes, Route } from 'react-router-dom'
 import ProductAll from './page/ProductAll'
 import Login from './page/Login'
 import ProductDetail from './page/ProductDetail'
+import Navbar from './component/Navbar'
 
 // 1. All products page, Login page, Product detail page
+// 1a. Navbar
 // 2. All products page: Show all products
 // 3a. When login button clicked, show login page
 // 3b. When product detail page clicked but not logged in, show login page
@@ -17,6 +19,7 @@ import ProductDetail from './page/ProductDetail'
 function App() {
   return (
     <div>
+      <Navbar />
       <Routes>
         <Route path='/' element={<ProductAll />} />
         <Route path='/login' element={<Login />} />
